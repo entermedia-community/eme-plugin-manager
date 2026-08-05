@@ -1,9 +1,11 @@
-<div id="header">
-    <div id="logo"><a class="ir" href="$home$apphome/index.html">eMedia Manager</a></div>
+<div id="header" class="justify-content-between">
+    <div id="managerlogo">
+        <a class="" href="$home$apphome/index.html" title="eMedia Manager"><i class="bi bi-diagram-3-fill me-2"></i> eMedia Manager</a>
+</div>
     <div id="user-status" class="p-3">
         #if( $user )
         <p class="welcome">Welcome, <span class="user">$user</span></p>
-        <a href="$home$apphome/authentication/logout.html" class="" style="color:#fff; text-decoration:underline">Logout</a>
+        <a href="$home$apphome/authentication/logout.html" class="" style="color:#fff; text-decoration:underline" title="Logout">Logout</a>
         #end
     </div>
 </div>

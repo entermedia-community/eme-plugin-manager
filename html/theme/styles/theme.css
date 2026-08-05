@@ -318,13 +318,12 @@ body {
 	height: 71px;
 	width: 100%;
 	margin-bottom: 40px;
-	background-color: #91795c;
+	background-color: #796041;
 	padding: 10px;
+	display:flex;
+	
 }
-#header img {
-	max-height: 100%;
-	object-fit: contain;
-}
+
 h1 {
 	color: #a29484;
 	font-size: 30px;
@@ -357,13 +356,17 @@ a:not(.btn):visited {
 a:not(.btn):hover {
 	color: #b69972;
 }
-
-#logo a {
-	width: 124px;
-	height: 27px;
-	background: url("../images/logo.png");
-	position: relative;
-	top: 24px;
+#managerlogo {
+	padding: 10px;
+}
+#managerlogo a {
+	color:#ffF;
+	font-size: 1.5rem;
+	font-family: Arial, "Bree Serif", serif !important;
+    font-style: italic;
+}
+#managerlogo a i {
+	font-size: 2rem;
 }
 #user-status {
 	float: right;
@@ -617,8 +620,10 @@ table tr:hover {
 }
 .app-option {
 	width: 720px;
-	height: 100px;
 	border-bottom: 1px solid #a29484;
+	display:flex;
+	flex-direction: row;
+	
 }
 .app-option-first {
 	border-top: 1px solid #a29484;
@@ -628,28 +633,25 @@ table tr:hover {
 }
 .app-store-icon {
 	margin: 20px 0 0 20px;
-	float: left;
+
 }
 .app-nameplate {
-	width: 360px;
-	height: 60px;
-	margin: 20px 0 0 20px;
-	float: left;
+	padding: 1rem;
+
 }
 .app-title {
 	color: #957958;
-	font-size: 20px;
+	font-size: 1.4rem;
 	font-weight: bold;
-	margin-top: 10px;
+	margin: 10px 0;
 }
 .app-subtitle {
 	color: #957958;
-	font-size: 10px;
+	font-size: 0.9rem;
 	font-weight: bold;
 }
 .learn-more {
-	float: right;
-	margin: 30px 20px 0 0;
+	
 }
 
 .app-info {

@@ -2,7 +2,7 @@
 #set( $data = $searcherManager.getData("system","frontend",$frontendid))
 <h3>Add Site</h3>
 			
-			<form name="adder" action="$home$apphome/views/sites/addsitefinish.html">
+			<form name="adder" action="$home$apphome/views/sites/addsitefinish.html" method="post">
 				<input name="frontendid" value="${data.id}" type="hidden"/>
 				<input name="deploypath" value="$appcatalog.rootpath/$data.id" type="hidden"/>
 
@@ -25,7 +25,8 @@
 				<input name="sitecatalogid"  size="30" class="form-control" /> <i> i.e. mystuff/catalog</i>
 				</p>
 
-				<p><input type="submit" class="btn btn-primary install-app" value="Save" /></p>
+				<p><input type="submit" class="btn btn-primary install-app" value="Save" />
+				<a href="$apphome/views/sites/index.html" class="btn btn-secondary ms-2">Cancel</a></p>
 
 				</div>				
 
