@@ -18,11 +18,9 @@
 			<input type="hidden" name="selectedsitesnapshot" value="$selectedsitesnapshotid" />
 			<input type="hidden" name="searchtype" value="sitesnapshot"/>
 	
-			#set( $admin = $searcherManager.getData($site.get("catalogid") , "user", "admin"))
-			#set( $key = $userManager.getStringEncryption().getPasswordMd5($admin.getPassword()) )
 			#set( $folder = $snapshot.get("folder"))
 	
-			#set( $url = "${context.siteRoot}/manager/views/sites/snapshots/download/${snapshot.getId()}/${folder}.zip?entermedia.key=$key")
+			#set( $url = "${context.siteRoot}/manager/views/sites/snapshots/download/${snapshot.getId()}/${folder}.zip")
 			
 			<a href="$url">URL:</a> <br>
 			<input size="50" value="$url" class="form-control mb-2"> 
