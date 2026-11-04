@@ -1571,7 +1571,21 @@ li div.listid A {
     min-height: 200px;
     overflow: auto;
 }
-#main-results-table th::after, .emresultstable th::after, .emdata th::after {
+.emselectable th {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    height: var(--nav-btn-height);
+    text-align: center;
+    vertical-align: middle !important;
+    position: relative;
+    border-top: 0 none;
+    border-bottom: var(--1px-light);
+    background: var(--themed-th);
+    color: var(--themed-th-text);
+    border-bottom: 1px solid var(--themed-th-hover);
+}
+.emselectable th::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1580,4 +1594,47 @@ li div.listid A {
     height: 100%;
     background: var(--themed-th-hover);
     z-index: 10;
+}
+.alert-error, .alert-save {
+    display: flex;
+    align-items: center;
+    border-left: 8px solid #2ed573;
+    background: #c3f3d7;
+    color: #23ad5c;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    margin: 16px auto;
+    width: 100%;
+    max-width: 400px;
+    min-height: 30px;
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    z-index: 100010;
+    animation: slideUp 0.3s ease forwards;
+}
+.alert-error .bi-info-circle-fill, .alert-save .bi-check-circle-fill {
+    margin-right: 8px;
+}
+
+.alert-error .bi, .alert-save .bi {
+    font-size: 1.2rem;
+}
+.bi.ns {
+    transform: scale(1);
+    line-height: 1;
+}
+.alert-error button, .alert-save button {
+    color: #23ad5c;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: auto;
 }
