@@ -1,3 +1,5 @@
 .DS_Store
 
 _text_*.txt
+html/components/javascript/index.min.js
+html/components/javascript/indexdefer.min.js
